@@ -30,23 +30,32 @@
 
   }
 
-- Descendant Selector
-  ul li{}
-
-- Child Selector
-  div>p{}
+- CSS Grouping Selector
+  h1,h2,h3{}
 
 - Attribute Selector
   input[type="text"]{}
 
-- Grouping Selector
-  h1,h2,h3{}
+#CSS Combinators selecter
+
+- Descendant Selector
+  ul li{}
 
 - Adjacent Sibling Selectors
   h1+p{}
 
+- Child Selector
+  div>p{}
+
 - General Sibling Selectors
   h1~p{}
+
+  #Anchor Pseudo-classes
+
+  - a:link{}
+  - a:visited{}
+  - a:hover{}
+  - a:active{}
 
 - firstchild pesudoclass
   ol li:first-child{}
@@ -61,11 +70,13 @@
   background: #eee;
   }
 
-  - The ::first-line Pseudo-element
-    p::first-line {
-    color: #ff0000;
-    font-variant: small-caps;
-    }
+#Pseudo-Elements
+
+- The ::first-line Pseudo-element
+  p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+  }
 
 - The ::first-letter Pseudo-element
 
@@ -82,40 +93,182 @@ font-size: xx-large;
   content: url("images/marker-right.gif");
   }
 
-  - CSS [attribute] Selector
-    [title] {
-    color: blue;
-    }
-    abbr[title] {
-    color: red;
-    }
-    input[type="submit"] {
-    border: 1px solid green;
-    }
-    [class~="warning"] {
-    color: #fff;
-    background: red;
-    }
-    [lang|=en] {
-    color: #fff;
-    background: blue;
-    }
-    a[href^="http://"] {
-    background: url("external.png") 100% 50% no-repeat;
-    padding-right: 15px;
-    }
-    a[href$=".pdf"] {
-    background: url("pdf.png") 0 50% no-repeat;
-    padding-left: 20px;
-    }
-    [class*="warning"] {
-    color: #fff;
-    background: red;
-    } #\*= operator to make an attribute selector matches all elements
+  #CSS [attribute] Selector
+
+  [title] {
+  color: blue;
+  }
+
+  abbr[title] {
+  color: red;
+  }
+
+  input[type="submit"] {
+  border: 1px solid green;
+  }
+
+  [class~="warning"] {
+  color: #fff;
+  background: red;
+  }
+
+  [lang|=en] {
+  color: #fff;
+  background: blue;
+  }
+
+  a[href^="http://"] {
+  background: url("external.png") 100% 50% no-repeat;
+  padding-right: 15px;
+  }
+
+  a[href$=".pdf"] {
+  background: url("pdf.png") 0 50% no-repeat;
+  padding-left: 20px;
+  }
+
+  [class*="warning"] {
+  color: #fff;
+  background: red;
+  } #\*= operator to make an attribute selector matches all elements
 
 # command
 
 ```bash
+***CSS comments***
+
+/**/#is a multi line command
+//#is a single line command
+
+
+***CSS Background Color***
+#RGB,HEX,HSL is a color format
+
+background-color:Tomato;#bg-color is tomato
+
+***CSS Text Color***
+
+color:red;#font-color is red
+
+
+***CSS Border****
+
+border:2px;#border is a line
+
+***RGB Value RED,GREEN,BLUE***
+
+color:rgb(255, 0, 0);#redcolor is rgb value
+
+***RGBA Value RED,GREEN,BLUE,ALBHA***
+
+color:rgba(255, 99, 71, 0.8);
+
+***HEX Vale***
+
+background-color:#ff0000;
+
+***HSL***
+
+background-color:hsl(0, 100%, 50%);
+
+***CSS Background***
+
+background-color:red;#rgb,rgba,hsl colors
+opacity:0.5;#light color
+background-image:url();#image bg
+background-repeat:repeat; no-repeat,repeat-x,space,initialinherit
+background-attachment:fixed; scroll
+background-position:; left top,left center,left bottom,right top,right center,right bottom,center top,center center,center bottom
+
+background (shorthand property): background: #ffffff url("img_tree.png") no-repeat right top;
+
+
+***CSS Border***
+
+border-style:;
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border
+
+border-width:;#n px, pt, cm, em, etc
+border-color:;#border color
+border: 5px solid red;#width,syle,color
+border-radius:;#px,cm,em
+
+
+***CSS Margin***
+
+margin-top:;
+margin-right:;
+margin-bottom:;
+margin-left:;
+margin:;
+
+***CSS Padding***
+
+padding-top:;
+padding-right:;
+padding-bottom:;
+padding-left:;
+padding:;
+
+***CSS Height Width***
+
+height:;,auto,length,%,initial,inherit
+width:;
+max-height:;
+min-height:;
+max-width:;
+min-width:;
+
+
+***OUTline***
+
+outline-style:;dotted,etc...
+outline-color:;#outline color
+outline-width:;thin,medium,thick,px,em
+outline-offset: 15px;
+outline:;
+outline: 5px solid yellow;
+
+***Text color***
+
+color:;
+text-align:;
+text-align-last:;
+direction:rtl;
+unicode-bidi:bidi-override;
+vertical-align:;baseline,text-top,text-bottom,sub,super
+text-decoration-line:;
+text-decoration-color:;
+text-decoration-style:;
+text-decoration-thickness:;
+text-decoration:;
+text-transform:;
+text-indent:;
+letter-spacing:;
+line-height:;
+word-spacing:;
+white-space:;
+text-shadow:;
+
+
+***Font***
+
+font-family:;
+font-style :;
+font-weight:;
+font-variant:;
+font-size:;
+ font: 20px Arial, sans-serif;
+
 
 border: 2px solid;#border
 outline: 2px solid;#borderoutline
@@ -232,231 +385,4 @@ linear-gradient(direction, color-stop1, color-stop2, ...)#Double colcor
 linear-gradient(angle, color-stop1, color-stop2, ...)
 radial-gradient(shape size at position, color-stop1, color-stop2, ...);
 radial-gradient()#closest-side, farthest-side, closest-corner, farthest-corner.
-```
-
-### CSS3 Examples
-
-# CSS Text
-
-```bash
-Setting the text color ==> color: blue;#text color,HEX,RGB,
-Alignment of text ==> text-align: center;#justify
-Indentation of text ==> text-indent: 100px;
-Decoration of text ==> text-decoration:overline;#line-through,underline
-Sets the spacing between characters ==> letter-spacing: -3px;
-Sets the spacing between words ==> word-spacing: 20px;
-Sets the spacing between lines of text ==> line-height: 1.2;
-Preserving white-space and line breaks ==>			white-space: pre;# nowrap
-Text wrapping inside an element ==> word-wrap: break-word;
-Vertical alignment of an image inside text==>  vertical-align: top;#middle,baseline
-
-# CSS Fonts
-
-Sets the font of a text==> font-family: Arial, Helvetica, sans-serif;
-Sets the size of the font==>font-size: 14px;
-Sets the style of the font==>font-style: normal;#italic,oblique
-Sets the variant of the font==>font-variant: small-caps;
-Sets the boldness of the font==>font-weight: normal;#bold
-Setting the all font properties in a single declaration - The font shorthand property ==>font: bold 2.5em "Times New Roman", Times, serif;
-
-# CSS Links
-
-Style different states of a link==>  a:link,    a:visited , a:hover ,a:active
-Remove the default underline from hyperlinks==>text-decoration: none;#underline
-Customize a link to look like a button==>
-Create image rollover effect==>
-
-# CSS Lists
-
-Specify bullets and numbering in the lists==>  list-style-type: square;#upper-roman
-Sets the position of list-item markers==>  ol.in li {
-                                                    list-style-position: inside;
-                                                     }
-    ol.out li {
-        list-style-position: outside;
-    }
-Sets an image as list-item markers==>list-style-image: url("/examples/images/bullet.png");
-Setting all list properties in a single declaration - The list-style shorthand property==>list-style: circle inside;
-Crating a simple navigation menus with lists==>
-Crating a simple dropdown menu using lists==>
-
-# CSS Tables
-
-Setting the borders of a table==>	border-collapse: collapse;,border: 1px solid #000000;
-Specify the dimension of a table==>
-Creating better tables by collapsing the table borders==>
-Setting the horizontal alignment of text inside table cell==>text-align: left;
-Setting the vertical alignment of content==> vertical-align: bottom;
-Specify how empty cells should be displayed==>empty-cells: show;
-Specify padding of table cell==> padding: 10px;
-Specify table layout algorithm - Automatic or Fixed==>table-layout: auto;#fixed
-Setting the position of table caption==>caption-side: bottom;
-
-# CSS Background
-
-Setting the background color of an elementc==> background-color: #f0e68c;
-Setting the image as elements background==> background-image: url("/examples/images/tile.png");
-Repeating background image horizontally or vertically==>        background-repeat: repeat-x;
-Specify the positioning of background image==> background-position: center;
-
-A fixed background image that will not scroll with its containing element==>background-attachment: fixed;
-Setting the all background properties at once - The background shorthand property==>background: #f0e68c url("/examples/images/smiley.png") no-repeat fixed 250px 25px;
-Setting the size of the background image==>
-Setting the background clipping==>background-clip: border-box;
-Setting the background origin==> background-origin: content-box;
-Adding multiple backgrounds to an element==>
-
-# CSS Units
-
-Working with absolute units (e.g. px, pt, cm etc.)==>
-Working with relative units (e.g. em, ex, % etc.)==>
-
-# CSS Dimension
-
-Setting width and height of an element==>width: 300px;,height: 00px;
-Setting maximum width and height of an element==>max-width: 400px;
-			max-height: 50px;
-Setting minimum width and height of an element==>	min-width: 300px;
-			min-height: 100px;
-Controlling overflow of content==>overflow: scroll;#fidden
-
-# CSS Alignment
-
-Alignment of text and inline element inside the block-level element==>
-Center alignment of block element using margin property==>
-Aligning element horizontally using the float property==>float: left;
-Aligning element horizontally and vertically using the position property==>top:0;,bottom:0;
-Prevent parent collapsing with the clear property==>clear: both;
-        visibility: hidden;
-Creating a Simple horizontal menu==>
-
-# CSS Positioning
-
-Position an element relative to the browser window==>position: reative;
-Position an element relative to its parent element==> position: absolute;,position:relative;
-Position an element relative to its normal position==>
-Overlapping of elements using the z-index property==> z-index: 1;
-
-# CSS Display
-
-Hide an element using the visibility property==>  visibility:hidden;
-Remove an element from DOM using the display property==> display:none;
-
-Display an element as an inline element==> display: inline;
-Display an element as a block element==> display: block;
-Collapsing table elements==>
-
-# CSS Border and Outlines
-
-Draw border around element==>border-style: solid;
-        border-width: 5px;
-        border-color: #000000;
-Draw border on the individual sides of an element==>border-top:;
-Setting different styles for the borders==> border-style: none;
-Setting the all border properties at once - The border shorthand property==>border: 5px solid #ff0000;
-Creating the rounded corners around an element==>
-Using images for creating borders==>border-image: url("/examples/images/border.png") 30 30 round;
-Draw outline around element==>	outline: 5px solid #ff0000;
-Draw border around element without effecting the surrounding elements==>
-
-# CSS Margin and Padding
-
-Sets the margins for individual sides of an element==> margin-top: 50px;
-        margin-bottom: 100px;
-        background: yellow;
-Setting all margin properties in a single declaration - The margin shorthand property==>        margin: 25px;
-Sets the paddings for individual sides of an element==>padding-top: 50px;
-        padding-bottom: 100px;
-        background: lime;
-Setting all padding properties at once - The padding shorthand property==>pdding:;
-
-# CSS Opacity
-
-Setting transparency of an element==>opacity: 0.7;
-Image rollover effect and transparency==> opacity: 0.5;
-        display: block;
-        filter: alpha(opacity=50); /* to work in IE */
-Text in a transparent box==>
-
-
-
-# CSS Pseudo-classes
-
-Setting styles for different states of hyperlinks==>
-Setting styles for form element in focus using the :focus pseudo-class==>a:focus {
-        color: yellow;
-    }
-Setting the styles for first child of an element using the :first-child pseudo-class==>
-Setting styles for last child of an element using the :first-child pseudo-class==>
-Setting styles for nth-child of an element using the :nth-child pseudo-class==>
-Setting styles for specific language using the :lang() pseudo-class==>
-Using pseudo-classes with selectors==>
-
-# CSS Pseudo-elements
-
-Creating the drop cap effect using the ::first-letter pseudo-element==>
-Styling the first line of a text differently using the ::first-line pseudo-element==>
-Insert some content before and/or after an element using the ::before and/or ::after pseudo-element==>
-Using pseudo-elements with classes==>
-
-# CSS3 Gradients
-
-Creating linear gradients from top to bottom direction==>
-Creating linear gradients from left to right direction==>
-Creating linear gradients along the diagonal==>
-Setting the direction of linear gradients using angles==>
-Creating linear gradients using multiple color stops==>
-Setting the location of color stops while creating the gradients==>
-Repeating the linear gradients==>
-Creating radial gradients==>
-Setting the shape of radial gradients==>
-Setting the size of radial gradients==>
-Repeating the radial gradients==>
-Using transparency with gradients==>
-
-# CSS3 Drop Shadows
-
-Creating box shadow effect==>
-Adding multiple box shadows to an elements box==>
-Creating text shadow effect==>
-
-# CSS3 2D Transforms
-
-Moving the elements using the translate() method==>
-Rotating the elements using the rotate() method==>
-Increasing or decreasing the size of an element using the scale() method==>
-Applying 2D transformation using the matrix() method==>
-Applying multiple transformation to an element==>
-
-# CSS3 3D Transforms
-
-Moving an element in three dimensional space using the translate3d() method==>
-Rotating an element in three dimensional space using the rotate3d() method==>
-Scaling an element in three dimensional space using the scale3d() method==>
-Applying 3D transformation using the matrix3d() method==>
-Applying multiple 3D transformation to an element==>
-
-# CSS3 Transitions
-
-Applying transition effect to background-color==>
-Applying transition effect to multiple property==>
-Setting all transition properties at once - The transition shorthand property==>
-
-# CSS3 Animations
-
-Animating elements on a web page==>
-Defining keyframe while creating animations==>
-Setting all animation properties at once - The animation shorthand property==>
-
-# CSS3 Multi-column Layouts
-
-Creating multi-column layouts==>
-Setting column count or width==>
-Setting gap between the columns==>
-Adding rule or vertical lines between the columns==>
-
-```
-
-```
-
 ```
