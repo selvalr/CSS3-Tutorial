@@ -14,6 +14,305 @@
 - organization
 - grid system
 
+### CSS RoadMap
+
+```bash
+* CSS Basic *
+
+1.Box model --->content,padding,border,margin
+2.Selecter and,Combinators
+3.border,margin,padding,and outline
+4.border-radius
+5.background
+6.colors -->simple,gradient,alpha transpency
+7.fonts
+8.display -->block,inline,inline-block,etc..
+9.position -->relative,absoulate,etc..
+10.dimenation -->top,left,height,width,max-width,aspect-ratio etc..
+11.Float
+12.overflow
+13.z-index
+
+<--1.Box model-->
+
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+
+<--2.Selecter cobinater-->
+
+selecter==>p{} , .class{} , #id{} , *{} , h1,p,h2{},
+combinators==>div p{} , div>p{},div + p{},div ~ p{}
+
+<---3.border,margin,padding,and outline--->
+
+border-style:;
+border-width:;
+border-color:;
+border-left:;
+
+margin-top:;
+margin-right:;
+margin-bottom:;
+margin-left:;
+
+padding-top:;
+padding-right:;
+padding-bottom:;
+padding-left:;
+
+outline-style:;
+outline-color:;
+outline-width:;
+outline-offset:;
+outline:;
+
+<---4.border-radius--->
+border-radius:;
+
+<---5.bacground--->
+background-color:;
+background-image:;
+background-repeat:;
+background-attachment:;
+background-position:;
+background (shorthand property):;
+
+<---6.colors--->
+color:;RGB,Hex,hsl
+
+<---7.fonts--->
+ font-family:;
+ font-style:;
+ font-size;
+ font-weight:;
+ font-variant:;
+
+<---8.display--->
+display:;
+visibility:;
+
+<---9.position--->
+
+position:;#static,relative,fixed,absolute,sticky
+
+<---10.dimenation--->
+
+height:;
+width:;
+min-height:;
+max-height:;
+
+<---11.float--->
+
+float:;#left,right,none,inherit
+clear:;
+
+<---12.overflow--->
+overflow:;#visible,hidden,scroll,auto
+
+<---13.z-indez--->
+The z-index property specifies the stack order of an element.
+z-index:;
+
+
+*CSS Medium *
+
+1.Specificity
+2.pseudo classes,elements
+3.opacity
+4.filter
+5.clip-path
+6.mask
+7.transform
+8.media
+9.flexbx
+10.grid
+11.animation
+
+
+<---1.Specificity--->
+
+* Inline styles - Example: <h1 style="color: pink;">
+* IDs - Example: #navbar
+* Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+* Elements and pseudo-elements - Example: h1, :before
+
+
+**first runnuning is inline css next id and next class and next tag
+
+  .test {color: green;}
+  p {color: red;}
+  <p id="demo" class="test" style="color: pink;">Hello World!</p>
+
+ .test {color: green;}
+  p {color: red;}
+  <p class="test">Hello World!</p>//output is:green color
+
+ #demo {color: blue;}
+    .test {color: green;}
+    p {color: red;}
+    <p id="demo" class="test">Hello World!</p>//output:blue color is running first
+
+
+
+<---2.pseudo classes, elements--->
+**Psedo Class:
+
+syntex:
+        selector:pseudo-class {
+                         property: value;
+                            }
+* Anchor Pseudo-classes --->  a:link{},a:visited{},a:hover{},a:active{}
+* Pseudo-classes and HTML Classes  --->  a.classname:hover {}
+* Hover on <div> ---> div:hover{}
+* CSS - The :first-child Pseudo-class ---> p:first-child{}
+
+**Pesudo-Elemet:
+
+syntex:
+      selector::pseudo-element {
+                                property: value;
+                              }
+
+* The ::first-line Pseudo-element ---> p::first-line {}
+* The ::first-letter Pseudo-element ---> p::first-letter {}
+* Pseudo-elements and HTML Classes ---> p.intro::first-letter {}
+* CSS - The ::before Pseudo-element ---> h1::before {}
+* CSS - The ::after Pseudo-element ---> h1::after {}
+* CSS - The ::marker Pseudo-element ---> ::marker {}
+* CSS - The ::selection Pseudo-element ---> ::selection {}
+
+
+<---3.opacity--->
+
+img {
+  opacity: 0.5;
+}
+
+<---4.filter--->
+
+filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();
+
+
+
+filter:;#drop-shadow(8px 8px 10px gray);,none;,blur(5px),brightness(200%);, grayscale(100%);,etc...
+
+
+<--5.Clip path--->
+
+clip: clip-source|basic-shape|margin-box|border-box|padding-box|content-box|fill-box|stroke-box|view-box|none|initial|inherit;
+
+clip:;
+
+<---6.Mask--->
+
+mask-image:; = Specifies an image to be used as a mask layer for an element
+mask-mode:;	Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask
+mask-origin:;	Specifies the origin position (the mask position area) of a mask layer image
+mask-position:;	Sets the starting position of a mask layer image (relative to the mask position area)
+mask-repeat:;	Specifies how the mask layer image is repeated
+mask-size:;	Specifies the size of a mask layer image
+
+<---7.transform--->
+
+syntex:
+transform: none|transform-functions|initial|inherit;
+
+properties:
+
+transform:;none,rotate(10deg);, rotateX(45deg);, rotateY(45deg);, skew(20deg,20deg);, skewX(30deg);,translate(20px,10px);,scale(2,2);matrix(0.866,0.7,-0.8,0.866,0,0);,
+
+
+<---8.media--->
+
+CSS Syntax
+
+@media not|only mediatype and (mediafeature and|or|not mediafeature) {
+  CSS-Code;
+}
+
+
+<---9.Flex Box Layout--->
+
+display:flex;
+flex-direction:;
+flex-wrap:;
+flex-flow:;
+justify-content:;
+align-items:;
+align-content:;
+
+The flex item properties are:
+
+order:;
+flex-grow:;
+flex-shrink:;
+flex-basis:;
+flex:;
+align-self:;
+
+<---10.Grid Layout--->
+
+display: grid;
+ display: inline-grid;
+
+ column-gap:;
+row-gap:;
+gap:;
+
+
+Property	Description
+column-gap:;
+gap:;
+grid:;
+grid-auto-rows, grid-auto-columns, and the grid-auto-flow properties
+grid-area:;
+grid-auto-columns:;
+grid-auto-flow	:;
+grid-auto-rows:;
+grid-column	:;
+grid-column-end
+grid-column-gap
+grid-column-start
+grid-gap
+grid-row
+grid-row-end
+grid-row-gap
+grid-row-start
+grid-template
+grid-template-areas
+grid-template-columns
+grid-template-rows
+row-gap
+
+<---10.CSS Animations--->
+
+@keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+animation
+
+
+* Advanced Topics
+ *
+
+1.SEO
+2.Accessibility
+3.Responsiveness
+4.Perfomance
+
+
+
+
+```
+
 # css Selecter
 
 - Element or Tag Selector
