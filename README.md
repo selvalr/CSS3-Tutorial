@@ -1,9 +1,11 @@
 # what is css?
 
 - CSS stands for Cascading Style Sheets
-- CSS describes how HTML elements are to be displayed on screen, paper, or in other media
-- CSS saves a lot of work. It can control the layout of multiple web pages all at once
+- Not Programming Language
+- Used for Styling
+- Design purpose
 - External stylesheets are stored in CSS files
+- Continuation of HTML
 
 # why use CSS?
 
@@ -13,6 +15,12 @@
 - Font changes
 - organization
 - grid system
+
+# Types Of Styles
+
+1. Inline-Adding style in each line
+2. Internal-style tags
+3. External-Linking external CSS file
 
 ### CSS RoadMap
 
@@ -99,7 +107,7 @@ position:;#static,relative,fixed,absolute,sticky
 
 <---10.dimenation--->
 
-height:;
+height:;#px not response,% is res in height,width
 width:;
 min-height:;
 max-height:;
