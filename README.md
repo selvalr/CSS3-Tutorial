@@ -45,6 +45,13 @@
 ![css!](./roadmap-img/19.jpg "css cheetsheet")
 ![css!](./roadmap-img/20.jpg "css cheetsheet")
 
+# css basic
+
+![css!](./basic-css.jpg "css cheetsheet")
+![css!](./css-center.jpg "css cheetsheet")
+![css!](./flex-box-css.jpg "css cheetsheet")
+![css!](./grid-css.jpg "css cheetsheet")
+
 ### CSS RoadMap
 
 ```bash
