@@ -14,6 +14,7 @@
 - Animation
 - Font changes
 - organization
+- flex-box
 - grid system
 
 # Types Of Styles
@@ -22,39 +23,10 @@
 2. Internal-style tags
 3. External-Linking external CSS file
 
-# css cheetsheet
-
-![css!](./roadmap-img/1.jpg "css cheetsheet")
-![css!](./roadmap-img/2.jpg "css cheetsheet")
-![css!](./roadmap-img/3.jpg "css cheetsheet")
-![css!](./roadmap-img/4.jpg "css cheetsheet")
-![css!](./roadmap-img/5.jpg "css cheetsheet")
-![css!](./roadmap-img/6.jpg "css cheetsheet")
-![css!](./roadmap-img/7.jpg "css cheetsheet")
-![css!](./roadmap-img/8.jpg "css cheetsheet")
-![css!](./roadmap-img/9.jpg "css cheetsheet")
-![css!](./roadmap-img/10.jpg "css cheetsheet")
-![css!](./roadmap-img/11.jpg "css cheetsheet")
-![css!](./roadmap-img/12.jpg "css cheetsheet")
-![css!](./roadmap-img/13.jpg "css cheetsheet")
-![css!](./roadmap-img/14.jpg "css cheetsheet")
-![css!](./roadmap-img/15.jpg "css cheetsheet")
-![css!](./roadmap-img/16.jpg "css cheetsheet")
-![css!](./roadmap-img/17.jpg "css cheetsheet")
-![css!](./roadmap-img/18.jpg "css cheetsheet")
-![css!](./roadmap-img/19.jpg "css cheetsheet")
-![css!](./roadmap-img/20.jpg "css cheetsheet")
-
-# css basic
-
-![css!](./basic-css.jpg "css cheetsheet")
-![css!](./css-center.jpg "css cheetsheet")
-![css!](./flex-box-css.jpg "css cheetsheet")
-![css!](./grid-css.jpg "css cheetsheet")
 
 ### CSS RoadMap
 
-```bash
+
 * CSS Basic *
 
 1.Box model --->content,padding,border,margin
@@ -65,11 +37,11 @@
 6.colors -->simple,gradient,alpha transpency
 7.fonts
 8.display -->block,inline,inline-block,etc..
-9.position -->relative,absoulate,etc..
+9.position -->static,relative,absoulate,fixed,sticky
 10.dimenation -->top,left,height,width,max-width,aspect-ratio etc..
-11.Float
-12.overflow
-13.z-index
+11.Float -->none,left,right,inline-start,inline-end,inherit
+12.overflow --> visible,hidden,scroll,auto
+13.z-index -->-1,1,2,3
 
 <--1.Box model-->
 
@@ -78,10 +50,10 @@ Padding - Clears an area around the content. The padding is transparent
 Border - A border that goes around the padding and content
 Margin - Clears an area outside the border. The margin is transparent
 
-<--2.Selecter cobinater-->
+<--2.Selecter combinater-->
 
-selecter==>p{} , .class{} , #id{} , *{} , h1,p,h2{},
-combinators==>div p{} , div>p{},div + p{},div ~ p{}
+simple selecter ==>p{} , .class{} , #id{} , *{} , h1,p,h2{},
+combinators ==>div p{all div tag inside elements p} , div>p{The child selector selects all elements},div + p{div block outside first element working},div ~ p{div block outside all p element working}
 
 <---3.border,margin,padding,and outline--->
 
@@ -107,9 +79,11 @@ outline-offset:;
 outline:;
 
 <---4.border-radius--->
+
 border-radius:;
 
 <---5.bacground--->
+
 background-color:;
 background-image:;
 background-repeat:;
@@ -118,9 +92,11 @@ background-position:;
 background (shorthand property):;
 
 <---6.colors--->
+
 color:;RGB,Hex,hsl
 
 <---7.fonts--->
+ 
  font-family:;
  font-style:;
  font-size;
@@ -128,6 +104,7 @@ color:;RGB,Hex,hsl
  font-variant:;
 
 <---8.display--->
+
 display:;
 visibility:;
 
@@ -148,9 +125,11 @@ float:;#left,right,none,inherit
 clear:;
 
 <---12.overflow--->
+
 overflow:;#visible,hidden,scroll,auto
 
 <---13.z-indez--->
+
 The z-index property specifies the stack order of an element.
 z-index:;
 
@@ -173,7 +152,9 @@ z-index:;
 <---1.Specificity--->
 
 * Inline styles - Example: <h1 style="color: pink;">
-* IDs - Example: #navbar
+* Header style - Example: <style>*{color:"red"};
+* external style - Example:<link rel="stylesheet" href=style.css>
+* ID  - Example: #navbar
 * Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
 * Elements and pseudo-elements - Example: h1, :before
 
@@ -196,7 +177,8 @@ z-index:;
 
 
 <---2.pseudo classes, elements--->
-**Psedo Class:
+
+**Pseudo Class:
 
 syntex:
         selector:pseudo-class {
@@ -338,18 +320,12 @@ animation-fill-mode
 animation
 
 
-* Advanced Topics
- *
-
-1.SEO
-2.Accessibility
-3.Responsiveness
-4.Perfomance
 
 
 
 
-```
+
+
 
 # css Selecter
 
@@ -723,3 +699,34 @@ linear-gradient(angle, color-stop1, color-stop2, ...)
 radial-gradient(shape size at position, color-stop1, color-stop2, ...);
 radial-gradient()#closest-side, farthest-side, closest-corner, farthest-corner.
 ```
+
+# css cheetsheet
+
+![css!](./roadmap-img/1.jpg "css cheetsheet")
+![css!](./roadmap-img/2.jpg "css cheetsheet")
+![css!](./roadmap-img/3.jpg "css cheetsheet")
+![css!](./roadmap-img/4.jpg "css cheetsheet")
+![css!](./roadmap-img/5.jpg "css cheetsheet")
+![css!](./roadmap-img/6.jpg "css cheetsheet")
+![css!](./roadmap-img/7.jpg "css cheetsheet")
+![css!](./roadmap-img/8.jpg "css cheetsheet")
+![css!](./roadmap-img/9.jpg "css cheetsheet")
+![css!](./roadmap-img/10.jpg "css cheetsheet")
+![css!](./roadmap-img/11.jpg "css cheetsheet")
+![css!](./roadmap-img/12.jpg "css cheetsheet")
+![css!](./roadmap-img/13.jpg "css cheetsheet")
+![css!](./roadmap-img/14.jpg "css cheetsheet")
+![css!](./roadmap-img/15.jpg "css cheetsheet")
+![css!](./roadmap-img/16.jpg "css cheetsheet")
+![css!](./roadmap-img/17.jpg "css cheetsheet")
+![css!](./roadmap-img/18.jpg "css cheetsheet")
+![css!](./roadmap-img/19.jpg "css cheetsheet")
+![css!](./roadmap-img/20.jpg "css cheetsheet")
+
+# css basic
+
+![css!](./basic-css.jpg "css cheetsheet")
+![css!](./css-center.jpg "css cheetsheet")
+![css!](./flex-box-css.jpg "css cheetsheet")
+![css!](./grid-css.jpg "css cheetsheet")
+
