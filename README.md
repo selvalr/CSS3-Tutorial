@@ -24,6 +24,12 @@
 3. External-Linking external CSS file
 
 
+
+## CSS Syntex:
+
+selecter {property:value}
+
+
 ### CSS RoadMap
 
 
@@ -35,7 +41,9 @@
 4.border-radius
 5.background
 6.colors -->simple,gradient,alpha transpency
+6.Text -->
 7.fonts
+7.Icons
 8.display -->block,inline,inline-block,etc..
 9.position -->static,relative,absoulate,fixed,sticky
 10.dimenation -->top,left,height,width,max-width,aspect-ratio etc..
@@ -93,7 +101,41 @@ background (shorthand property):;
 
 <---6.colors--->
 
-color:;RGB,Hex,hsl
+color:;,RGB(0,0,0);,Hex,hsl
+
+<--6.Text--->
+
+*text alignment*
+
+text-align:;
+text-align-last:;
+direction:;
+unicode-bidi:;
+vertical-align:;
+
+*text Decoration*
+
+text-decoration-line:;
+text-decoration-color:;
+text-decoration-style:;
+text-decoration-thickness:;
+text-decoration:;
+
+*text transform*
+
+text-transform:;
+
+*text spacing*
+
+text-indent:;
+letter-spacing:;
+line-height:;
+word-spacing:;
+white-space:;
+
+*text shadow*
+
+text-shadow:;
 
 <---7.fonts--->
  
@@ -102,6 +144,12 @@ color:;RGB,Hex,hsl
  font-size;
  font-weight:;
  font-variant:;
+
+<--7.Icons--->
+
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
 
 <---8.display--->
 
@@ -128,7 +176,7 @@ clear:;
 
 overflow:;#visible,hidden,scroll,auto
 
-<---13.z-indez--->
+<---13.z-index--->
 
 The z-index property specifies the stack order of an element.
 z-index:;
@@ -144,7 +192,7 @@ z-index:;
 6.mask
 7.transform
 8.media
-9.flexbx
+9.flexbox
 10.grid
 11.animation
 
