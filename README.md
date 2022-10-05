@@ -80,11 +80,69 @@ Margin - Clears an area outside the border. The margin is transparent.
 
 ---
 
-**2.Selecter combinater**
+**2.Selecter & combinater**
 
 simple selecter ==>p{} , .class{} , #id{} , *{} , h1,p,h2{},
 
-combinators ==>div p{all div tag inside elements p} , div>p{The child selector selects all elements},div + p{div block outside first element working},div ~ p{div block outside all p element working}
+***combinators***
+
+Descendant Selector(space):
+
+div p{all div tag inside elements p} 
+
+Child Selecter(>):
+
+ div>p{The child selector selects all elements}
+ 
+Adjacent Sibiling Selecter(+):
+
+ div + p{div block outside first element working}
+
+General Sibiling Selecter(~):
+
+ div ~ p{div block outside all p element working}
+
+ ***Attribute selecter***
+  
+  *CSS [attribute] Selector*:
+
+  [title] {
+  color: blue;
+  }
+
+  abbr[title] {
+  color: red;
+  }
+
+  input[type="submit"] {
+  border: 1px solid green;
+  }
+
+  [class~="warning"] {
+  color: #fff;
+  background: red;
+  }
+
+  [lang|=en] {
+  color: #fff;
+  background: blue;
+  }
+
+  a[href^="http://"] {
+  background: url("external.png") 100% 50% no-repeat;
+  padding-right: 15px;
+  }
+
+  a[href$=".pdf"] {
+  background: url("pdf.png") 0 50% no-repeat;
+  padding-left: 20px;
+  }
+
+  [class*="warning"] {
+  color: #fff;
+  background: red;
+  } #\*= operator to make an attribute selector matches all elements
+
 
 **3.border,margin,padding,and outline**
 
@@ -188,9 +246,9 @@ text-shadow:;
 
 **8.display**
 
-display:;
+display:;#inline,block,none,inline-block
 
-visibility:;
+visibility:;#hidden
 
 **9.position**
 
@@ -222,6 +280,15 @@ The z-index property specifies the stack order of an element.
 
 z-index:;#-1,1,2,..
 
+**14.Counters**
+
+- counter-reset - Creates or resets a counter
+
+- counter-increment - Increments a counter value
+
+- content - Inserts generated content
+
+- counter() or counters() function - Adds the value of a counter to an element
 
 **CSS Medium**
 
@@ -492,6 +559,102 @@ animation-fill-mode
 
 animation
 
+**CSS Advanced**
+
+1.Rounded Corner #border radius round corner
+
+2.Border-Image # border image set
+
+3.CSS Multiple Background #multiple bg-image set
+
+4.CSS Gradients #gradient is a multiple color background
+
+5.CSS Shadow #text and box shadows
+
+**1.Rounded-corner**
+
+border-radius:;
+
+border-top-left-radius:;
+
+border-top-right-radius:;
+
+border-bottom-right-radius:;
+
+border-bottom-left-radius:;
+
+**2.Border-image**
+
+border-image:;
+
+border-image-source:;
+ 
+order-image-slice:;
+  
+border-image-width:;
+   
+border-image-outset:;
+    
+border-image-repeat:;
+
+
+**3.CSS Multiple Background**
+`
+#example1 {
+  background-image: url(img_flwr.gif), url(paper.gif);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+}`
+
+#CSS Background Size:
+
+background-size:;#contain and cover,and height,width
+
+background-origin:;#border-box,padding-box,content-box
+
+background-clip:;#border-box,padding-box,content-box
+
+**4.CSS Gradients**
+
+- Linear Gradients (goes down/up/left/right/diagonally)
+`example:
+        #grad {
+  background-image: linear-gradient(red, yellow);
+}
+`
+
+- Radial Gradients (defined by their center)
+`examle:
+#grad {
+  background-image: radial-gradient(red, yellow, green);
+}`
+
+
+- Conic Gradients (rotated around a center point)
+`
+example:
+  #grad {
+  background-image: conic-gradient(red, yellow, green);
+}
+
+`
+
+**5.CSS Shadow**
+
+*text shadow*
+  `
+  h1 {
+      text-shadow: 2px 2px 5px red;
+      }
+`
+*box-shadow*
+`
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+`
 
 # css Selecter
 
@@ -572,45 +735,7 @@ font-size: xx-large;
   content: url("images/marker-right.gif");
   }
 
-  #CSS [attribute] Selector
-
-  [title] {
-  color: blue;
-  }
-
-  abbr[title] {
-  color: red;
-  }
-
-  input[type="submit"] {
-  border: 1px solid green;
-  }
-
-  [class~="warning"] {
-  color: #fff;
-  background: red;
-  }
-
-  [lang|=en] {
-  color: #fff;
-  background: blue;
-  }
-
-  a[href^="http://"] {
-  background: url("external.png") 100% 50% no-repeat;
-  padding-right: 15px;
-  }
-
-  a[href$=".pdf"] {
-  background: url("pdf.png") 0 50% no-repeat;
-  padding-left: 20px;
-  }
-
-  [class*="warning"] {
-  color: #fff;
-  background: red;
-  } #\*= operator to make an attribute selector matches all elements
-
+ 
 
 
 # css cheetsheet
