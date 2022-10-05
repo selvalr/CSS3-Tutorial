@@ -642,19 +642,21 @@ example:
 **5.CSS Shadow**
 
 *text shadow*
-  `
+  
+  ```
   h1 {
       text-shadow: 2px 2px 5px red;
       }
-`
+```
 *box-shadow*
-`
+
+```
 div.card {
   width: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
-`
+```
 
 # css Selecter
 
