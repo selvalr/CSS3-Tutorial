@@ -250,13 +250,13 @@ z-index:;#-1,1,2,..
 
 **1.Specificity**
 
-  - Inline styles - Example: <h1 style="color: pink;"></h1>
+  - Inline styles - Example: `<h1 style="color: pink;"></h1>`
   
   - Header style - Example: <style>*{color:"red"};</style>
   
-  - external style - Example:<link rel="stylesheet" href=style.css>
+  - external style - Example:`<link rel="stylesheet" href=style.css>`
   
-  - ID  - Example: #navbar
+  - ID  - Example: #idName
   
   - Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
   
