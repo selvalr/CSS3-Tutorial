@@ -33,7 +33,7 @@ selecter {property:value}
 ### CSS RoadMap
 
 
-* CSS Basic *
+  **CSS Basic**
 
 1.Box model --->content,padding,border,margin
 2.Selecter and,Combinators
@@ -51,14 +51,14 @@ selecter {property:value}
 12.overflow --> visible,hidden,scroll,auto
 13.z-index -->-1,1,2,3
 
-<--1.Box model-->
+*1.Box model*
 
 Content - The content of the box, where text and images appear
 Padding - Clears an area around the content. The padding is transparent
 Border - A border that goes around the padding and content
 Margin - Clears an area outside the border. The margin is transparent
-
-<--2.Selecter combinater-->
+---
+*2.Selecter combinater*
 
 simple selecter ==>p{} , .class{} , #id{} , *{} , h1,p,h2{},
 combinators ==>div p{all div tag inside elements p} , div>p{The child selector selects all elements},div + p{div block outside first element working},div ~ p{div block outside all p element working}
@@ -182,7 +182,7 @@ The z-index property specifies the stack order of an element.
 z-index:;
 
 
-*CSS Medium *
+**CSS Medium**
 
 1.Specificity
 2.pseudo classes,elements
