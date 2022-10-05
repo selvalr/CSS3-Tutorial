@@ -178,7 +178,6 @@ text-shadow:;
  font-variant:;
 
 **7.Icons**
-
 ```
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
@@ -221,7 +220,7 @@ overflow:;#visible,hidden,scroll,auto
 
 The z-index property specifies the stack order of an element.
 
-z-index:;
+z-index:;#-1,1,2,..
 
 
 **CSS Medium**
@@ -251,9 +250,9 @@ z-index:;
 
 **1.Specificity**
 
-  - Inline styles - Example: <h1 style="color: pink;">
+  - Inline styles - Example: <h1 style="color: pink;"></h1>
   
-  - Header style - Example: <style>*{color:"red"};
+  - Header style - Example: <style>*{color:"red"};</style>
   
   - external style - Example:<link rel="stylesheet" href=style.css>
   
