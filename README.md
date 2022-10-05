@@ -178,6 +178,7 @@ text-shadow:;
  font-variant:;
 
 **7.Icons**
+
 `
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
@@ -185,6 +186,7 @@ text-shadow:;
 
 <i class="fas fa-heart"></i>
 `
+
 **8.display**
 
 display:;
