@@ -179,13 +179,13 @@ text-shadow:;
 
 **7.Icons**
 
-`
+```
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
 <i class="fas fa-cloud"></i>
 
 <i class="fas fa-heart"></i>
-`
+```
 
 **8.display**
 
