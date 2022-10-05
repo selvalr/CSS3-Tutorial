@@ -431,6 +431,9 @@ mask-repeat:;	Specifies how the mask layer image is repeated
 mask-size:;	Specifies the size of a mask layer image
 
 **7.transform**
+
+*2D Transform*
+
 syntex:
 
 transform: none|transform-functions|initial|inherit;
@@ -439,6 +442,14 @@ properties:
 
 transform:;none,rotate(10deg);, rotateX(45deg);, rotateY(45deg);, skew(20deg,20deg);, skewX(30deg);,translate(20px,10px);,scale(2,2);matrix(0.866,0.7,-0.8,0.866,0,0);,
 
+*3D Transform*
+
+syntex:
+With the CSS transform property you can use the following 3D transformation methods:
+
+rotateX()
+rotateY()
+rotateZ()
 
 **8.media**
 
@@ -451,34 +462,40 @@ CSS Syntax
 
 **9.Flex Box Layout**
 
+- flex stands for flexible,adaptive
+- single diamension layout design.  example: row OR Cloumn only
 display:flex;
+- flexbox use to no the alternative for: display:block,display:inline,display:inline-block; not used flexbox
 
-flex-direction:;
 
-flex-wrap:;
 
-flex-flow:;
+flex-direction:; #column,row,column-reverse,row-reverse
 
-justify-content:;
+flex-wrap:;#wrap,nowrap,wrap-reverse,
 
-align-items:;
+flex-flow:;flex-direction && flex-wrap two same the element
 
-align-content:;
+justify-content:;#center,flex-start,flex-end,space-aroud,space-between  -->this content main x axis working alignment
+
+align-content:;#space-between,space-around,stretch,center,flext-start,flex-end  ---> this is a cross-axis alignment
+
+align-items:;#center,lex-start,flex-end,stretch,baseline
 
 
 *The flex item properties are:*
 
-order:;
+order:;-->order change the box
 
-flex-grow:;
+flex-grow:;1box in 2 box
+flex-shrink:;2box in 1box
 
-flex-shrink:;
+flex-basis:;--->The flex-basis property specifies the initial length of a flex item.
 
-flex-basis:;
+flex:; --> The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.
 
-flex:;
 
-align-self:;
+
+align-self:;#strech,flex-start,flex-end,center
 
 **10.Grid Layout**
 
@@ -571,6 +588,10 @@ animation
 
 5.CSS Shadow #text and box shadows
 
+6.Transitions
+
+
+
 **1.Rounded-corner**
 
 border-radius:;
@@ -657,6 +678,22 @@ div.card {
   text-align: center;
 }
 ```
+
+**6.Transitions**
+
+- transition
+
+- transition-delay:;#1s
+
+- transition-duration:;#2s
+
+- transition-property:;#width,height
+
+- transition-timing-function:;#ease,linear,ease-in,ease-out,ease-in-out,cubic-bezier(n,n,n,n)
+
+
+
+
 
 # css Selecter
 
