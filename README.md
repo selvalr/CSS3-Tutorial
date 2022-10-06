@@ -639,8 +639,8 @@ grid-auto-rows, grid-auto-columns, and the grid-auto-flow properties
 
 grid-area: 2 / 1 / span 2 / span 3; 
 
---> Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:
--->The grid-area property specifies a grid item's size and location in a grid layout, and is a shorthand property for the following properties:
+- Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:
+- The grid-area property specifies a grid item's size and location in a grid layout, and is a shorthand property for the following properties:
                   grid-row-start
                   grid-column-start
                   grid-row-end
