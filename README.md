@@ -606,7 +606,7 @@ gap:50px; --> The spaces between each column/row are called gaps.
 
 
 
-*Property	Description*
+**Property	Description**
 
 ***grid-shorthand***
 
@@ -638,7 +638,8 @@ grid-area: 2 / 1 / span 2 / span 3;
 - The grid-auto-columns property sets a size for the columns in a grid container.
 
 - syntex:
-- grid-auto-columns: auto|max-content|min-content|length;
+  
+  ` grid-auto-columns: auto|max-content|min-content|length;`
 
 grid-auto-columns:;
 
@@ -736,7 +737,8 @@ grid-row:;
 
 
 - syntex:
-- grid-row-end: auto|row-line|span n;
+  
+  `grid-row-end: auto|row-line|span n;`
   
 grid-row-end:; -->row end of width line
 
@@ -746,7 +748,8 @@ grid-row-end:; -->row end of width line
 - Note: This property was renamed to row-gap in CSS3
 
 - syntex:
-- grid-row-gap: length;
+  
+  `grid-row-gap: length;`
 
 
 grid-row-gap:;--->row gap grid
@@ -755,7 +758,8 @@ grid-row-gap:;--->row gap grid
 - The grid-row-start property defines on which row-line the item will start.
 
 - syntex:
-- grid-row-start: auto|row-line;
+  
+  `grid-row-start: auto|row-line;`
 
 
 grid-row-start:;
@@ -768,7 +772,8 @@ grid-template-columns
 grid-template-areas
 
 - syntex:
-- grid-template: none|grid-template-rows / grid-template-columns|grid-template-areas|initial|inherit;
+  
+  `grid-template: none|grid-template-rows / grid-template-columns|grid-template-areas|initial|inherit;`
 
 
 grid-template:;
@@ -781,7 +786,8 @@ grid-template:;
 - Each area is defined by apostrophes. Use a period sign to refer to a grid item with no name.
 
 - syntex:
-- grid-template-areas: none|itemnames;
+  
+  `grid-template-areas: none|itemnames;`
 
 
 grid-template-areas:;
@@ -792,7 +798,9 @@ grid-template-areas:;
 - The values are a space separated list, where each value specifies the size of the respective column
 
 - syntex:
-- grid-template-columns: none|auto|max-content|min-content|length|initial|inherit;
+  
+  `grid-template-columns: none|auto|max-content|min-content|length|initial|inherit;`
+
 
 grid-template-columns:;
 
@@ -804,7 +812,8 @@ grid-template-columns:;
 row-gap:;--->row gap
 
 - syntex:
-- grid-template-rows: none|auto|max-content|min-content|length|initial|inherit;
+  
+  `grid-template-rows: none|auto|max-content|min-content|length|initial|inherit;`
 
 grid-template-rows:;
 
