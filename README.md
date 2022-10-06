@@ -211,9 +211,13 @@ vertical-align:;
 ***text Decoration***
 
 text-decoration-line:;
+
 text-decoration-color:;
+
 text-decoration-style:;
+
 text-decoration-thickness:;
+
 text-decoration:;
 
 ***text transform***
@@ -223,9 +227,13 @@ text-transform:;
 ***text spacing***
 
 text-indent:;
+
 letter-spacing:;
+
 line-height:;
+
 word-spacing:;
+
 white-space:;
 
 ***text shadow***
