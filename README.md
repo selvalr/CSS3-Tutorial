@@ -147,7 +147,7 @@ div p{all div tag inside elements p}
 
 **3.border,margin,padding,and outline**
 
-border-style:;
+border-style:;<br>
 border-width:;
 border-color:;
 border-left:;
@@ -203,9 +203,13 @@ color:;,RGB(0,0,0);,Hex,hsl
 ***text alignment***
 
 text-align:;
+
 text-align-last:;
+
 direction:;
+
 unicode-bidi:;
+
 vertical-align:;
 
 ***text Decoration***
