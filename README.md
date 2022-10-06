@@ -645,7 +645,8 @@ grid-auto-columns:;
 ***grid-auto-flow***
 - The grid-auto-flow property controls how auto-placed items get inserted in the grid.
 
-- syntex
+- syntex :
+ 
   `grid-auto-flow: row|column|dense|row dense|column dense;`
 
 grid-auto-flow	:;
@@ -655,16 +656,18 @@ grid-auto-flow	:;
 
 - This property affects only rows with the size not set
 
-- syntex:
-- grid-auto-rows: auto|max-content|min-content|length;
+- syntex :
+  
+  `grid-auto-rows: auto|max-content|min-content|length;`
   
 
 grid-auto-rows:;
 
 ***grid-column***
 - The grid-column property specifies a grid item's size and location in a grid layout, and is a shorthand property for the following properties:
-- syntex:
-- grid-column: grid-column-start / grid-column-end;
+- syntex :
+  
+  `grid-column: grid-column-start / grid-column-end;`
   
 
 grid-column	:1/5; --> 1st line to 5 th line
@@ -673,7 +676,8 @@ grid-column	:1/5; --> 1st line to 5 th line
 - The grid-column-start property defines on which column-line the item will start.
 
 - syntex:
-- grid-column-start: auto|span n|column-line;
+  
+  `grid-column-start: auto|span n|column-line;`
   
 grid-column-start:;
 
@@ -681,7 +685,8 @@ grid-column-start:;
 - The grid-column-end property defines how many columns an item will span, or on which column-line the item will end (see example at the end of this page).
 
 - syntex:
-- grid-column-end: auto|span n|column-line;
+ 
+  `grid-column-end: auto|span n|column-line;`
   
 
 
@@ -694,7 +699,8 @@ grid-column-end:;--->column end line
 - Note: This property was renamed to column-gap in CSS3. 
 
 - syntex:
-- grid-column-gap: length;
+  
+  `grid-column-gap: length;`
   
 grid-column-gap:;
 
@@ -707,8 +713,9 @@ grid-column-gap:;
 - Note: This property was renamed to gap in CSS3.  
 
 
-- syntex
-- grid-gap: grid-row-gap grid-column-gap;
+- syntex :
+  
+  `grid-gap: grid-row-gap grid-column-gap;`
 
 grid-gap:;-->gap the content
 
