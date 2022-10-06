@@ -638,13 +638,15 @@ grid-area: 2 / 1 / span 2 / span 3;
 - The grid-auto-columns property sets a size for the columns in a grid container.
 
 - syntex:
--        ```grid-auto-columns: auto|max-content|min-content|length;```
+- grid-auto-columns: auto|max-content|min-content|length;
+
+grid-auto-columns:;
 
 ***grid-auto-flow***
 - The grid-auto-flow property controls how auto-placed items get inserted in the grid.
 
 - syntex
-- grid-auto-flow: row|column|dense|row dense|column dense;
+  `grid-auto-flow: row|column|dense|row dense|column dense;`
 
 grid-auto-flow	:;
 
