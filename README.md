@@ -148,25 +148,25 @@ div p{all div tag inside elements p}
 **3.border,margin,padding,and outline**
 
 border-style:;<br>
-border-width:;
-border-color:;
-border-left:;
-
-margin-top:;
-margin-right:;
-margin-bottom:;
-margin-left:;
-
-padding-top:;
-padding-right:;
-padding-bottom:;
-padding-left:;
-
-outline-style:;
-outline-color:;
-outline-width:;
-outline-offset:;
-outline:;
+border-width:;<br>
+border-color:;<br>
+border-left:;<br>
+<br>
+margin-top:;<br>
+margin-right:;<br>
+margin-bottom:<br>
+margin-left:;<br>
+<br>
+padding-top:;<br>
+padding-right:<br>
+padding-bottom;<br>
+padding-left:;<br>
+<br>
+outline-style:<br>
+outline-color:<br>
+outline-width:<br>
+outline-offset;<br>
+outline:;<br>
 
 ---
 
