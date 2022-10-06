@@ -86,19 +86,19 @@ simple selecter ==>p{} , .class{} , #id{} , *{} , h1,p,h2{},
 
 ***combinators***
 
-Descendant Selector(space):
+1.Descendant Selector(space):
 
 div p{all div tag inside elements p} 
 
-Child Selecter(>):
+2.Child Selecter(>):
 
  div>p{The child selector selects all elements}
  
-Adjacent Sibiling Selecter(+):
+3.Adjacent Sibiling Selecter(+):
 
  div + p{div block outside first element working}
 
-General Sibiling Selecter(~):
+4.General Sibiling Selecter(~):
 
  div ~ p{div block outside all p element working}
 
@@ -200,7 +200,7 @@ color:;,RGB(0,0,0);,Hex,hsl
 
 **6.Text**
 
-*text alignment*
+***text alignment***
 
 text-align:;
 text-align-last:;
@@ -208,7 +208,7 @@ direction:;
 unicode-bidi:;
 vertical-align:;
 
-*text Decoration*
+***text Decoration***
 
 text-decoration-line:;
 text-decoration-color:;
@@ -216,11 +216,11 @@ text-decoration-style:;
 text-decoration-thickness:;
 text-decoration:;
 
-*text transform*
+***text transform***
 
 text-transform:;
 
-*text spacing*
+***text spacing***
 
 text-indent:;
 letter-spacing:;
@@ -228,7 +228,7 @@ line-height:;
 word-spacing:;
 white-space:;
 
-*text shadow*
+***text shadow***
 
 text-shadow:;
 
@@ -302,7 +302,7 @@ overflow:;#visible,hidden,scroll,auto
 
 **13.z-index**
 
-The z-index property specifies the stack order of an element.
+b78- The z-index property specifies the stack order of an element.
 
 z-index:;#-1,1,2,..
 
@@ -360,9 +360,7 @@ z-index:;#-1,1,2,..
   
   - Elements and pseudo-elements - Example: h1, :before
 
-
 ***first runnuning is inline css next id and next class and next tag:***
-
   .test {color: green;}
 
   p {color: red;}
@@ -472,7 +470,7 @@ mask-size:;	Specifies the size of a mask layer image
 
 **7.transform**
 
-*2D Transform*
+***2D Transform***
 
 syntex:
 
@@ -482,7 +480,7 @@ properties:
 
 transform:;none,rotate(10deg);, rotateX(45deg);, rotateY(45deg);, skew(20deg,20deg);, skewX(30deg);,translate(20px,10px);,scale(2,2);matrix(0.866,0.7,-0.8,0.866,0,0);,
 
-*3D Transform*
+***3D Transform***
 
 syntex:
 With the CSS transform property you can use the following 3D transformation methods:
@@ -495,7 +493,7 @@ rotateZ()
 
 **8.media**
 
-CSS Syntax
+CSS Syntax:
 `
 @media not|only mediatype and (mediafeature and|or|not mediafeature) {
   CSS-Code;
@@ -640,8 +638,7 @@ grid-area: 2 / 1 / span 2 / span 3;
 - The grid-auto-columns property sets a size for the columns in a grid container.
 
 - syntex:
-  
-grid-auto-columns: auto|max-content|min-content|length;
+        ```grid-auto-columns: auto|max-content|min-content|length;```
 
 ***grid-auto-flow***
 - The grid-auto-flow property controls how auto-placed items get inserted in the grid.
