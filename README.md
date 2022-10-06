@@ -53,6 +53,8 @@ selecter {property:value}
 
 7.Icons
 
+8.Links
+
 8.display -->block,inline,inline-block,etc..
 
 9.position -->static,relative,absoulate,fixed,sticky
@@ -271,6 +273,55 @@ text-shadow:;
 
 ---
 
+**8.Link**
+
+- a:link - a normal, unvisited link
+- a:visited - a link the user has visited
+- a:hover - a link when the user mouses over it
+- a:active - a link the moment it is clicked
+
+***text decornation***
+- The text-decoration property is mostly used to remove underlines from links:
+
+`
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+`
+
+***bg-color***
+- The background-color property can be used to specify a background color for links:
+
+    `a:link {
+  background-color: yellow;
+}
+
+a:visited {
+  background-color: cyan;
+}
+
+a:hover {
+  background-color: lightgreen;
+}
+
+a:active {
+  background-color: hotpink;
+} `
+
+
+
 
 **8.display**
 
@@ -337,6 +388,10 @@ z-index:;#-1,1,2,..
 1.Specificity
 
 2.pseudo classes,elements
+
+2.Units & value
+
+2.!important
 
 3.opacity
 
@@ -438,6 +493,79 @@ syntex:
   - CSS - The ::selection Pseudo-element ---> ::selection {}
 
 ---
+
+**2.Units & value**
+- There are two types of length units: absolute and relative.
+
+***Absolute Lengths***
+
+cm	centimeters <br>                  
+mm	millimeters <br> 
+in	inches (1in = 96px = 2.54cm) <br> 
+px *	pixels (1px = 1/96th of 1in) <br> 
+pt	points (1pt = 1/72 of 1in) <br> 
+pc	picas (1pc = 12 pt) <br> 
+
+***Relative Lengths***
+
+em	,ex,ch,rem,vw,vh,vmin,vmax,%,
+
+
+**2.!important**
+- The !important rule in CSS is used to add more importance to a property/value than normal.
+
+- In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element!
+
+`<style>
+#myid {
+  background-color: blue;
+}
+
+.myclass {
+  background-color: gray;
+}
+
+p {
+  background-color: red !important;
+}
+</style>`
+
+**2.Math-function**
+- The CSS math functions allow mathematical expressions to be used as property values. Here, we will explain the calc(), max() and min() functions.
+
+***calc()***
+- 	Allows you to perform calculations to determine CSS property values:
+
+
+- CSS Syntax:
+  `calc(expression)`
+
+
+ - example:
+  `#div1 {
+      position: absolute;
+      left: 50px;
+      width: calc(100% - 100px);
+      border: 1px solid black;
+      background-color: yellow;
+      padding: 5px 
+}`
+
+***max()***
+- Uses the largest value, from a comma-separated list of values, as the property value
+
+
+- CSS Syntax
+`max(value1, value2, ...)`
+
+
+***The min() Function***
+- Uses the smallest value, from a comma-separated list of values, as the property value:
+
+
+- CSS Syntax
+`min(value1, value2, ...)`
+
 
 **3.opacity**
 
