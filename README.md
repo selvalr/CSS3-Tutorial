@@ -1162,6 +1162,42 @@ button {
 }
 </style>`
 
+**8.User inteface**
+
+- In this chapter you will learn about the following CSS user interface properties:
+
+1.resize
+2.outline-offset
+
+***Resize***
+- The resize property specifies if (and how) an element should be resizable by the user.
+
+`<style> 
+div {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: horizontal;
+  overflow: auto;
+}
+</style>`
+
+***outline-offset***
+- The outline-offset property adds space between an outline and the edge or border of an element.
+
+`div.ex1 {
+  margin: 20px;
+  border: 1px solid black;
+  outline: 4px solid red;
+  outline-offset: 15px;
+} 
+
+div.ex2 {
+  margin: 10px;
+  border: 1px solid black;
+  outline: 5px dashed blue;
+  outline-offset: 5px;
+} ` 
 
 # css Selecter
 
