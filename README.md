@@ -1004,6 +1004,8 @@ animation
 
 6.Transitions
 
+7.Variables
+
 
 
 **1.Rounded-corner**
@@ -1116,6 +1118,49 @@ div.card {
 
 ---
 
+**7.Variables**
+
+- First of all: CSS variables can have a global or local scope.
+
+- Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared.
+
+- To create a variable with global scope, declare it inside the :root selector. The :root selector matches the document's root element.
+
+- To create a variable with local scope, declare it inside the selector that is going to use it.
+
+- The following example is equal to the example above, but here we use the var() function.
+
+- First, we declare two global variables (--blue and --white). Then, we use the var() function to insert the value of the variables later in the style sheet:
+
+- Example:
+  
+`<style>
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff; 
+}
+
+body {
+  background-color: var(--blue);
+}
+
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
+
+.container {
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 15px;
+}
+
+button {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 5px;
+}
+</style>`
 
 
 # css Selecter
