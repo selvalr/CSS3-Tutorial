@@ -648,7 +648,7 @@ CSS Syntax:
 display:flex;
 - flexbox use to no the alternative for: display:block,display:inline,display:inline-block; not used flexbox
 
-# flex-box cheetsheet:
+# flex-box example:
 
 [Flex-box-defination](https://flexbox.malven.co/)
 
@@ -732,6 +732,11 @@ align-self:;#strech,flex-start,flex-end,center
 
 - Grid is a two diamensinal layout
 - making it easier to design web pages without having to use floats and positioning.
+
+# grid example:
+
+[grid-defination](https://grid.malven.co/)
+
 
 ***Grid-display***
 
