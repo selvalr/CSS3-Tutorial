@@ -650,7 +650,7 @@ display:flex;
 
 # flex-box cheetsheet:
 
-[link](https://flexbox.malven.co/)
+[Flex-box-defination](https://flexbox.malven.co/)
 
 
 ***flex-direction***
