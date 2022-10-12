@@ -648,6 +648,10 @@ CSS Syntax:
 display:flex;
 - flexbox use to no the alternative for: display:block,display:inline,display:inline-block; not used flexbox
 
+# flex-box cheetsheet:
+
+[link](https://flexbox.malven.co/)
+
 
 ***flex-direction***
   - box direction in flexiable
