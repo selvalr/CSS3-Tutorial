@@ -1292,31 +1292,6 @@ font-size: xx-large;
 
 # css cheetsheet
 
-![css!](./roadmap-img/1.jpg "css cheetsheet")
-![css!](./roadmap-img/2.jpg "css cheetsheet")
-![css!](./roadmap-img/3.jpg "css cheetsheet")
-![css!](./roadmap-img/4.jpg "css cheetsheet")
-![css!](./roadmap-img/5.jpg "css cheetsheet")
-![css!](./roadmap-img/6.jpg "css cheetsheet")
-![css!](./roadmap-img/7.jpg "css cheetsheet")
-![css!](./roadmap-img/8.jpg "css cheetsheet")
-![css!](./roadmap-img/9.jpg "css cheetsheet")
-![css!](./roadmap-img/10.jpg "css cheetsheet")
-![css!](./roadmap-img/11.jpg "css cheetsheet")
-![css!](./roadmap-img/12.jpg "css cheetsheet")
-![css!](./roadmap-img/13.jpg "css cheetsheet")
-![css!](./roadmap-img/14.jpg "css cheetsheet")
-![css!](./roadmap-img/15.jpg "css cheetsheet")
-![css!](./roadmap-img/16.jpg "css cheetsheet")
-![css!](./roadmap-img/17.jpg "css cheetsheet")
-![css!](./roadmap-img/18.jpg "css cheetsheet")
-![css!](./roadmap-img/19.jpg "css cheetsheet")
-![css!](./roadmap-img/20.jpg "css cheetsheet")
+[CSS Reference quick](https://adam-marsden.co.uk/css-cheat-sheet)
 
-# css basic
-
-![css!](./basic-css.jpg "css cheetsheet")
-![css!](./css-center.jpg "css cheetsheet")
-![css!](./flex-box-css.jpg "css cheetsheet")
-![css!](./grid-css.jpg "css cheetsheet")
 
