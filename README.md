@@ -6,6 +6,7 @@
 - Design purpose
 - External stylesheets are stored in CSS files
 - Continuation of HTML
+- The first version of CSS was introduced in 1996 by Håkon Wium Lie
 
 # why use CSS?
 
@@ -23,15 +24,11 @@
 2. Internal-style tags
 3. External-Linking external CSS file
 
-
-
 ## CSS Syntex:
 
 selecter {property:value}
 
-
 # CSS RoadMap
-
 
 # CSS Basic Roadmap
 
@@ -69,14 +66,11 @@ selecter {property:value}
 
 **1.Box model**
 
-Content - The content of the box, where text and images appear.  
-
+Content - The content of the box, where text and images appear.
 
 Padding - Clears an area around the content. The padding is transparent.
 
-
 Border - A border that goes around the padding and content.
-
 
 Margin - Clears an area outside the border. The margin is transparent.
 
@@ -84,66 +78,66 @@ Margin - Clears an area outside the border. The margin is transparent.
 
 **2.Selecter & combinater**
 
-simple selecter ==>p{} , .class{} , #id{} , *{} , h1,p,h2{},
+simple selector ==>p{} , .class{} , #id{} , \*{} , h1,p,h2{},
 
-***combinators***
+**_combinators_**
 
 1.Descendant Selector(space):
 
-div p{all div tag inside elements p} 
+div p{all div tag inside elements p}
 
-2.Child Selecter(>):
+2.Child Selector(>):
 
- div>p{The child selector selects all elements}
- 
-3.Adjacent Sibiling Selecter(+):
+div>p{The child selector selects all elements}
 
- div + p{div block outside first element working}
+3.Adjacent Sibiling Selector(+):
+
+div + p{div block outside first element working}
 
 4.General Sibiling Selecter(~):
 
- div ~ p{div block outside all p element working}
+div ~ p{div block outside all p element working}
 
- ***Attribute selecter***
-  
-  *CSS [attribute] Selector*:
+**_Attribute selecter_**
 
-  [title] {
-  color: blue;
-  }
+_CSS [attribute] Selector_:
 
-  abbr[title] {
-  color: red;
-  }
+[title] {
+color: blue;
+}
 
-  input[type="submit"] {
-  border: 1px solid green;
-  }
+abbr[title] {
+color: red;
+}
 
-  [class~="warning"] {
-  color: #fff;
-  background: red;
-  }
+input[type="submit"] {
+border: 1px solid green;
+}
 
-  [lang|=en] {
-  color: #fff;
-  background: blue;
-  }
+[class~="warning"] {
+color: #fff;
+background: red;
+}
 
-  a[href^="http://"] {
-  background: url("external.png") 100% 50% no-repeat;
-  padding-right: 15px;
-  }
+[lang|=en] {
+color: #fff;
+background: blue;
+}
 
-  a[href$=".pdf"] {
-  background: url("pdf.png") 0 50% no-repeat;
-  padding-left: 20px;
-  }
+a[href^="http://"] {
+background: url("external.png") 100% 50% no-repeat;
+padding-right: 15px;
+}
 
-  [class*="warning"] {
-  color: #fff;
-  background: red;
-  } #\*= operator to make an attribute selector matches all elements
+a[href$=".pdf"] {
+background: url("pdf.png") 0 50% no-repeat;
+padding-left: 20px;
+}
+
+[class*="warning"] {
+color: #fff;
+background: red;
+} #\*= operator to make an attribute selector matches all elements
 
 ---
 
@@ -202,7 +196,7 @@ color:;,RGB(0,0,0);,Hex,hsl
 
 **6.Text**
 
-***text alignment***
+**_text alignment_**
 
 text-align:;
 
@@ -214,7 +208,7 @@ unicode-bidi:;
 
 vertical-align:;
 
-***text Decoration***
+**_text Decoration_**
 
 text-decoration-line:;
 
@@ -226,11 +220,11 @@ text-decoration-thickness:;
 
 text-decoration:;
 
-***text transform***
+**_text transform_**
 
 text-transform:;
 
-***text spacing***
+**_text spacing_**
 
 text-indent:;
 
@@ -242,27 +236,28 @@ word-spacing:;
 
 white-space:;
 
-***text shadow***
+**_text shadow_**
 
 text-shadow:;
 
 ---
 
 **7.fonts**
- 
- font-family:;
 
- font-style:;
+font-family:;
 
- font-size;
+font-style:;
 
- font-weight:;
+font-size;
 
- font-variant:;
+font-weight:;
+
+font-variant:;
 
 ---
 
 **7.Icons**
+
 ```
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
@@ -280,48 +275,48 @@ text-shadow:;
 - a:hover - a link when the user mouses over it
 - a:active - a link the moment it is clicked
 
-***text decornation***
+**_text decornation_**
+
 - The text-decoration property is mostly used to remove underlines from links:
 
 `
 a:link {
-  text-decoration: none;
+text-decoration: none;
 }
 
 a:visited {
-  text-decoration: none;
+text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 a:active {
-  text-decoration: underline;
+text-decoration: underline;
 }
 `
 
-***bg-color***
+**_bg-color_**
+
 - The background-color property can be used to specify a background color for links:
 
-    `a:link {
+      `a:link {
+
   background-color: yellow;
-}
+  }
 
 a:visited {
-  background-color: cyan;
+background-color: cyan;
 }
 
 a:hover {
-  background-color: lightgreen;
+background-color: lightgreen;
 }
 
 a:active {
-  background-color: hotpink;
+background-color: hotpink;
 } `
-
-
-
 
 **8.display**
 
@@ -415,32 +410,32 @@ z-index:;#-1,1,2,..
 
 **1.Specificity**
 
-  - Inline styles - Example: `<h1 style="color: pink;"></h1>`
-  
-  - Header style - Example: <style>*{color:"red"};</style>
-  
-  - external style - Example:`<link rel="stylesheet" href=style.css>`
-  
-  - ID  - Example: #idName
-  
-  - Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
-  
-  - Elements and pseudo-elements - Example: h1, :before
+- Inline styles - Example: `<h1 style="color: pink;"></h1>`
 
-***first runnuning is inline css next id and next class and next tag:***
-  .test {color: green;}
+- Header style - Example: <style>\*{color:"red"};</style>
 
-  p {color: red;}
+- external style - Example:`<link rel="stylesheet" href=style.css>`
+
+- ID - Example: #idName
+
+- Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+
+- Elements and pseudo-elements - Example: h1, :before
+
+**_first runnuning is inline css next id and next class and next tag:_**
+.test {color: green;}
+
+p {color: red;}
 
   <p id="demo" class="test" style="color: pink;">Hello World!</p>
 
- .test {color: green;}
+.test {color: green;}
 
-  p {color: red;}
+p {color: red;}
 
   <p class="test">Hello World!</p>//output is:green color
 
- #demo {color: blue;}
+#demo {color: blue;}
 
     .test {color: green;}
 
@@ -448,100 +443,98 @@ z-index:;#-1,1,2,..
 
     <p id="demo" class="test">Hello World!</p>//output:blue color is running first
 
-
 ---
 
 **2.pseudo classes, elements**
 
-*Pseudo Class:*
+_Pseudo Class:_
 
-`
-syntex:
+`syntex:
         selector:pseudo-class {
                          property: value;
                             }
-                            `
-  - Anchor Pseudo-classes --->  a:link{},a:visited{},a:hover{},a:active{}
+                           `
 
-  - Pseudo-classes and HTML Classes  --->  a.classname:hover {}
+- Anchor Pseudo-classes ---> a:link{},a:visited{},a:hover{},a:active{}
 
-  - Hover on <div> ---> div:hover{}
+- Pseudo-classes and HTML Classes ---> a.classname:hover {}
 
-  - CSS - The :first-child Pseudo-class ---> p:first-child{}
+- Hover on <div> ---> div:hover{}
 
+- CSS - The :first-child Pseudo-class ---> p:first-child{}
 
-*Pesudo-Elemet:*
+_Pesudo-Elemet:_
 
-`
-syntex:
+`syntex:
       selector::pseudo-element {
                                 property: value;
-                              }
-`
-  - The ::first-line Pseudo-element ---> p::first-line {}
-  
-  - The ::first-letter Pseudo-element ---> p::first-letter {}
-  
-  - Pseudo-elements and HTML Classes ---> p.intro::first-letter {}
-  
-  - CSS - The ::before Pseudo-element ---> h1::before {}
-  
-  - CSS - The ::after Pseudo-element ---> h1::after {}
-  
-  - CSS - The ::marker Pseudo-element ---> ::marker {}
-  
-  - CSS - The ::selection Pseudo-element ---> ::selection {}
+                              }`
+
+- The ::first-line Pseudo-element ---> p::first-line {}
+
+- The ::first-letter Pseudo-element ---> p::first-letter {}
+
+- Pseudo-elements and HTML Classes ---> p.intro::first-letter {}
+
+- CSS - The ::before Pseudo-element ---> h1::before {}
+
+- CSS - The ::after Pseudo-element ---> h1::after {}
+
+- CSS - The ::marker Pseudo-element ---> ::marker {}
+
+- CSS - The ::selection Pseudo-element ---> ::selection {}
 
 ---
 
 **2.Units & value**
+
 - There are two types of length units: absolute and relative.
 
-***Absolute Lengths***
+**_Absolute Lengths_**
 
-cm	centimeters <br>                  
-mm	millimeters <br> 
-in	inches (1in = 96px = 2.54cm) <br> 
-px *	pixels (1px = 1/96th of 1in) <br> 
-pt	points (1pt = 1/72 of 1in) <br> 
-pc	picas (1pc = 12 pt) <br> 
+cm centimeters <br>  
+mm millimeters <br>
+in inches (1in = 96px = 2.54cm) <br>
+px \* pixels (1px = 1/96th of 1in) <br>
+pt points (1pt = 1/72 of 1in) <br>
+pc picas (1pc = 12 pt) <br>
 
-***Relative Lengths***
+**_Relative Lengths_**
 
-em	,ex,ch,rem,vw,vh,vmin,vmax,%,
-
+em ,ex,ch,rem,vw,vh,vmin,vmax,%,
 
 **2.!important**
+
 - The !important rule in CSS is used to add more importance to a property/value than normal.
 
 - In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element!
 
 `<style>
 #myid {
-  background-color: blue;
+background-color: blue;
 }
 
 .myclass {
-  background-color: gray;
+background-color: gray;
 }
 
 p {
-  background-color: red !important;
+background-color: red !important;
 }
 </style>`
 
 **2.Math-function**
+
 - The CSS math functions allow mathematical expressions to be used as property values. Here, we will explain the calc(), max() and min() functions.
 
-***calc()***
-- 	Allows you to perform calculations to determine CSS property values:
+**_calc()_**
 
+-     Allows you to perform calculations to determine CSS property values:
 
 - CSS Syntax:
   `calc(expression)`
 
-
- - example:
+- example:
   `#div1 {
       position: absolute;
       left: 50px;
@@ -551,26 +544,24 @@ p {
       padding: 5px 
 }`
 
-***max()***
+**_max()_**
+
 - Uses the largest value, from a comma-separated list of values, as the property value
 
-
 - CSS Syntax
-`max(value1, value2, ...)`
+  `max(value1, value2, ...)`
 
+**_The min() Function_**
 
-***The min() Function***
 - Uses the smallest value, from a comma-separated list of values, as the property value:
 
-
 - CSS Syntax
-`min(value1, value2, ...)`
-
+  `min(value1, value2, ...)`
 
 **3.opacity**
 
 img {
-  opacity: 0.5;
+opacity: 0.5;
 }
 
 ---
@@ -578,7 +569,6 @@ img {
 **4.filter**
 
 filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();
-
 
 filter:;#drop-shadow(8px 8px 10px gray);,none;,blur(5px),brightness(200%);, grayscale(100%);,etc...
 
@@ -596,21 +586,21 @@ clip:;
 
 mask-image:; = Specifies an image to be used as a mask layer for an element
 
-mask-mode:;	Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask
+mask-mode:; Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask
 
-mask-origin:;	Specifies the origin position (the mask position area) of a mask layer image
+mask-origin:; Specifies the origin position (the mask position area) of a mask layer image
 
-mask-position:;	Sets the starting position of a mask layer image (relative to the mask position area)
+mask-position:; Sets the starting position of a mask layer image (relative to the mask position area)
 
-mask-repeat:;	Specifies how the mask layer image is repeated
+mask-repeat:; Specifies how the mask layer image is repeated
 
-mask-size:;	Specifies the size of a mask layer image
+mask-size:; Specifies the size of a mask layer image
 
 ---
 
 **7.transform**
 
-***2D Transform***
+**_2D Transform_**
 
 syntex:
 
@@ -620,7 +610,7 @@ properties:
 
 transform:;none,rotate(10deg);, rotateX(45deg);, rotateY(45deg);, skew(20deg,20deg);, skewX(30deg);,translate(20px,10px);,scale(2,2);matrix(0.866,0.7,-0.8,0.866,0,0);,
 
-***3D Transform***
+**_3D Transform_**
 
 syntex:
 With the CSS transform property you can use the following 3D transformation methods:
@@ -644,82 +634,84 @@ CSS Syntax:
 **9.Flex Box Layout**
 
 - flex stands for flexible,adaptive
-- single diamension layout design.  example: row OR Cloumn only
-display:flex;
+- single diamension layout design. example: row OR Cloumn only
+  display:flex;
 - flexbox use to no the alternative for: display:block,display:inline,display:inline-block; not used flexbox
 
 # flex-box example:
 
 [Flex-box-defination](https://flexbox.malven.co/)
 
+**_flex-direction_**
 
-***flex-direction***
-  - box direction in flexiable
-  
+- box direction in flexiable
+
 flex-direction:; #column,row,column-reverse,row-reverse
 
-***flex-wrap***
+**_flex-wrap_**
+
 - the content wrap the box next line
-  
+
 flex-wrap:;#wrap,nowrap,wrap-reverse,
 
-***flex-flow***
-- shorthand in flex-direction & flex-wrap:
+**_flex-flow_**
 
+- shorthand in flex-direction & flex-wrap:
 
 flex-flow:;flex-direction && flex-wrap two same the element
 
-***justify-content***
+**_justify-content_**
+
 - this content main x axis working alignment
 
 justify-content:;#center,flex-start,flex-end,space-aroud,space-between
 
-***align-content***
+**_align-content_**
+
 - this is a cross-axis alignment
 
 align-content:;#space-between,space-around,stretch,center,flext-start,flex-end,
 
-***align-items***
-- The align-items property is used to align the flex items.
+**_align-items_**
 
+- The align-items property is used to align the flex items.
 
 align-items:;#center,lex-start,flex-end,stretch,baseline
 
-
 **The flex item properties are:**
 
-***order***
-- The order property specifies the order of the flex items.
+**_order_**
 
+- The order property specifies the order of the flex items.
 
 order:;-->order change the box
 
-***flex-grow***
+**_flex-grow_**
+
 - The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.
-
-
 
 flex-grow:;1box in 2 box
 
-***flex-Shrink***
-- The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items.
+**_flex-Shrink_**
 
+- The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items.
 
 flex-shrink:;2box in 1box
 
-***flexx-basis***
+**_flexx-basis_**
+
 - The flex-basis property specifies the initial length of a flex item.
-  
 
 flex-basis:;
 
-***flex***
+**_flex_**
+
 - The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.
 
+flex:;
 
-flex:; 
+**_align-self_**
 
-***align-self***
 - The align-self property specifies the alignment for the selected item inside the flexible container.
 
 - The align-self property overrides the default alignment set by the container's align-items property.
@@ -737,14 +729,13 @@ align-self:;#strech,flex-start,flex-end,center
 
 [grid-defination](https://grid.malven.co/)
 
-
-***Grid-display***
+**_Grid-display_**
 
 display: grid;
 
 display: inline-grid;
 
-***gap***
+**_gap_**
 
 column-gap:50px; --> The column-gap property sets the gap between the columns:
 
@@ -752,15 +743,12 @@ row-gap:50px; --> The row-gap property sets the gap between the rows:
 
 gap:50px; --> The spaces between each column/row are called gaps.
 
+**Property Description**
 
+**_grid-shorthand_**
 
+grid:150px / auto auto auto; --->The grid property is a shorthand property for:
 
-**Property	Description**
-
-***grid-shorthand***
-
-grid:150px / auto auto auto; --->The grid property is a shorthand property for: 
-                                                
                                                 grid-template-rows
                                                 grid-template-columns
                                                 grid-template-areas
@@ -768,108 +756,108 @@ grid:150px / auto auto auto; --->The grid property is a shorthand property for:
                                                 grid-auto-columns
                                                 grid-auto-flow
 
-
-
 grid-auto-rows, grid-auto-columns, and the grid-auto-flow properties
 
-***grid-area-shorthand***
+**_grid-area-shorthand_**
 
-grid-area: 2 / 1 / span 2 / span 3; 
+grid-area: 2 / 1 / span 2 / span 3;
 
 - Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:
 - The grid-area property specifies a grid item's size and location in a grid layout, and is a shorthand property for the following properties:
-                  grid-row-start
-                  grid-column-start
-                  grid-row-end
-                  grid-column-end
+  grid-row-start
+  grid-column-start
+  grid-row-end
+  grid-column-end
 
-***grid-auto-column***
+**_grid-auto-column_**
+
 - The grid-auto-columns property sets a size for the columns in a grid container.
 
 - syntex:
-  
+
   ` grid-auto-columns: auto|max-content|min-content|length;`
 
 grid-auto-columns:;
 
-***grid-auto-flow***
+**_grid-auto-flow_**
+
 - The grid-auto-flow property controls how auto-placed items get inserted in the grid.
 
 - syntex :
- 
+
   `grid-auto-flow: row|column|dense|row dense|column dense;`
 
-grid-auto-flow	:;
+grid-auto-flow :;
 
-***grid-auto-rows***
+**_grid-auto-rows_**
+
 - The grid-auto-rows property sets a size for the rows in a grid container.
 
 - This property affects only rows with the size not set
 
 - syntex :
-  
+
   `grid-auto-rows: auto|max-content|min-content|length;`
-  
 
 grid-auto-rows:;
 
-***grid-column***
+**_grid-column_**
+
 - The grid-column property specifies a grid item's size and location in a grid layout, and is a shorthand property for the following properties:
 - syntex :
-  
+
   `grid-column: grid-column-start / grid-column-end;`
-  
 
-grid-column	:1/5; --> 1st line to 5 th line
+grid-column :1/5; --> 1st line to 5 th line
 
-***grid-column-start***
+**_grid-column-start_**
+
 - The grid-column-start property defines on which column-line the item will start.
 
 - syntex:
-  
+
   `grid-column-start: auto|span n|column-line;`
-  
+
 grid-column-start:;
 
-***grid-column-end***
+**_grid-column-end_**
+
 - The grid-column-end property defines how many columns an item will span, or on which column-line the item will end (see example at the end of this page).
 
 - syntex:
- 
-  `grid-column-end: auto|span n|column-line;`
-  
 
+  `grid-column-end: auto|span n|column-line;`
 
 grid-column-end:;--->column end line
 
+**_grid-column-gap_**
 
-***grid-column-gap***
 - The grid-column-gap property defines the size of the gap between the columns in a grid layout.
 
-- Note: This property was renamed to column-gap in CSS3. 
+- Note: This property was renamed to column-gap in CSS3.
 
 - syntex:
-  
+
   `grid-column-gap: length;`
-  
+
 grid-column-gap:;
 
+**_grid-gap_**
 
-***grid-gap***
 - The grid-gap property defines the size of the gap between the rows and columns in a grid layout, and is a shorthand property for the following properties:
 
 - grid-row-gap
 - grid-column-gap
-- Note: This property was renamed to gap in CSS3.  
-
+- Note: This property was renamed to gap in CSS3.
 
 - syntex :
-  
+
   `grid-gap: grid-row-gap grid-column-gap;`
 
 grid-gap:;-->gap the content
 
-***grid-row***
+**_grid-row_**
+
 - The grid-row property specifies a grid item's size and location in a grid layout, and is a shorthand property for the following properties::
 
 - grid-row-start
@@ -878,42 +866,42 @@ grid-gap:;-->gap the content
 - syntex:
 - grid-row: grid-row-start / grid-row-end;
 
-
 grid-row:;
 
-***grid-row-end***
+**_grid-row-end_**
+
 - The grid-row-end property defines how many rows an item will span, or on which row-line the item will end (see example at the end of this page).
 
-
 - syntex:
-  
+
   `grid-row-end: auto|row-line|span n;`
-  
+
 grid-row-end:; -->row end of width line
 
-***grid-row-gap***
+**_grid-row-gap_**
+
 - The grid-row-gap property defines the size of the gap between the rows in a grid layout.
 
 - Note: This property was renamed to row-gap in CSS3
 
 - syntex:
-  
-  `grid-row-gap: length;`
 
+  `grid-row-gap: length;`
 
 grid-row-gap:;--->row gap grid
 
-***grid-row-start***
+**_grid-row-start_**
+
 - The grid-row-start property defines on which row-line the item will start.
 
 - syntex:
-  
-  `grid-row-start: auto|row-line;`
 
+  `grid-row-start: auto|row-line;`
 
 grid-row-start:;
 
-***grid-template***
+**_grid-template_**
+
 - The grid-template property is a shorthand property for the following properties:
 
 grid-template-rows
@@ -921,13 +909,13 @@ grid-template-columns
 grid-template-areas
 
 - syntex:
-  
-  `grid-template: none|grid-template-rows / grid-template-columns|grid-template-areas|initial|inherit;`
 
+  `grid-template: none|grid-template-rows / grid-template-columns|grid-template-areas|initial|inherit;`
 
 grid-template:;
 
-***grid-template-areas***
+**_grid-template-areas_**
+
 - The grid-template-areas property specifies areas within the grid layout.
 
 - You can name grid items by using the grid-area property, and then reference to the name in the grid-template-areas property.
@@ -935,43 +923,41 @@ grid-template:;
 - Each area is defined by apostrophes. Use a period sign to refer to a grid item with no name.
 
 - syntex:
-  
-  `grid-template-areas: none|itemnames;`
 
+  `grid-template-areas: none|itemnames;`
 
 grid-template-areas:;
 
-***grid-template-columns***
+**_grid-template-columns_**
+
 - The grid-template-columns property specifies the number (and the widths) of columns in a grid layout.
 
 - The values are a space separated list, where each value specifies the size of the respective column
 
 - syntex:
-  
-  `grid-template-columns: none|auto|max-content|min-content|length|initial|inherit;`
 
+  `grid-template-columns: none|auto|max-content|min-content|length|initial|inherit;`
 
 grid-template-columns:;
 
+**_grid-template-rows_**
 
-***grid-template-rows***
 - The grid-template-rows property specifies the number (and the heights) of the rows in a grid layout.
 
 - The values are a space-separated list, where each value specifies the height of the respective row
-row-gap:;--->row gap
+  row-gap:;--->row gap
 
 - syntex:
-  
+
   `grid-template-rows: none|auto|max-content|min-content|length|initial|inherit;`
 
 grid-template-rows:;
 
-
-***justify-content***
+**_justify-content_**
 
 justify-content:;--> The justify-content property is used to align the whole grid inside the container.
 
-***align-content***
+**_align-content_**
 
 align-content:;--> The align-content property is used to vertically align the whole grid inside the container.
 
@@ -1036,13 +1022,13 @@ border-bottom-left-radius:;
 border-image:;
 
 border-image-source:;
- 
+
 order-image-slice:;
-  
+
 border-image-width:;
-   
+
 border-image-outset:;
-    
+
 border-image-repeat:;
 
 ---
@@ -1068,25 +1054,24 @@ background-clip:;#border-box,padding-box,content-box
 **4.CSS Gradients**
 
 - Linear Gradients (goes down/up/left/right/diagonally)
-`example:
+  `example:
         #grad {
   background-image: linear-gradient(red, yellow);
 }
 `
 
 - Radial Gradients (defined by their center)
-`examle:
+  `examle:
 #grad {
   background-image: radial-gradient(red, yellow, green);
 }`
 
-
 - Conic Gradients (rotated around a center point)
-`
-example:
+  `
+  example:
   #grad {
   background-image: conic-gradient(red, yellow, green);
-}
+  }
 
 `
 
@@ -1094,14 +1079,15 @@ example:
 
 **5.CSS Shadow**
 
-*text shadow*
-  
-  ```
-  h1 {
-      text-shadow: 2px 2px 5px red;
-      }
+_text shadow_
+
 ```
-*box-shadow*
+h1 {
+    text-shadow: 2px 2px 5px red;
+    }
+```
+
+_box-shadow_
 
 ```
 div.card {
@@ -1142,32 +1128,32 @@ div.card {
 - First, we declare two global variables (--blue and --white). Then, we use the var() function to insert the value of the variables later in the style sheet:
 
 - Example:
-  
+
 `<style>
 :root {
-  --blue: #1e90ff;
-  --white: #ffffff; 
+--blue: #1e90ff;
+--white: #ffffff;
 }
 
 body {
-  background-color: var(--blue);
+background-color: var(--blue);
 }
 
 h2 {
-  border-bottom: 2px solid var(--blue);
+border-bottom: 2px solid var(--blue);
 }
 
 .container {
-  color: var(--blue);
-  background-color: var(--white);
-  padding: 15px;
+color: var(--blue);
+background-color: var(--white);
+padding: 15px;
 }
 
 button {
-  background-color: var(--white);
-  color: var(--blue);
-  border: 1px solid var(--blue);
-  padding: 5px;
+background-color: var(--white);
+color: var(--blue);
+border: 1px solid var(--blue);
+padding: 5px;
 }
 </style>`
 
@@ -1175,10 +1161,11 @@ button {
 
 - In this chapter you will learn about the following CSS user interface properties:
 
-1.resize
-2.outline-offset
+  1.resize
+  2.outline-offset
 
-***Resize***
+**_Resize_**
+
 - The resize property specifies if (and how) an element should be resizable by the user.
 
 `<style> 
@@ -1191,22 +1178,23 @@ div {
 }
 </style>`
 
-***outline-offset***
+**_outline-offset_**
+
 - The outline-offset property adds space between an outline and the edge or border of an element.
 
 `div.ex1 {
-  margin: 20px;
-  border: 1px solid black;
-  outline: 4px solid red;
-  outline-offset: 15px;
-} 
+margin: 20px;
+border: 1px solid black;
+outline: 4px solid red;
+outline-offset: 15px;
+}
 
 div.ex2 {
-  margin: 10px;
-  border: 1px solid black;
-  outline: 5px dashed blue;
-  outline-offset: 5px;
-} ` 
+margin: 10px;
+border: 1px solid black;
+outline: 5px dashed blue;
+outline-offset: 5px;
+} `
 
 # css Selecter
 
@@ -1287,11 +1275,6 @@ font-size: xx-large;
   content: url("images/marker-right.gif");
   }
 
- 
-
-
 # css cheetsheet
 
 [CSS Reference quick](https://adam-marsden.co.uk/css-cheat-sheet)
-
-
