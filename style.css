@@ -1,0 +1,25 @@
+p {
+  color: purple;
+}
+
+/*Selector:*/
+/*Element Selector:*/
+p {
+  color: purple;
+}
+
+/*Group Selectors*/
+h3,
+p {
+  color: red;
+}
+
+/*Id Selector*/
+#heading {
+  color: blue;
+}
+
+/*Class Selector*/
+.para {
+  color: purple;
+}
