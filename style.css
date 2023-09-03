@@ -1,9 +1,11 @@
-p {
-  color: purple;
+/*Universal Selector*/
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 /*Selector:*/
-/*Element Selector:*/
+/*Element Selector: or Tag Selector*/
 p {
   color: purple;
 }

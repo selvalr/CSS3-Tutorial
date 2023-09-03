@@ -82,9 +82,7 @@ simple selector ==>p{} , .class{} , #id{} , \*{} , h1,p,h2{},
 
 **_combinators_**
 
-1.Descendant Selector(space):
-
-div p{all div tag inside elements p}
+1.Descendant Selector(space):ul li,div p{all div tag inside elements p}
 
 2.Child Selector(>):
 
@@ -172,7 +170,7 @@ border-radius:;
 
 ---
 
-**5.bacground**
+**5.background**
 
 background-color:;
 
@@ -185,6 +183,14 @@ background-attachment:;
 background-position:;
 
 background (shorthand property):;
+
+background-origin:;-->padding-box,border-box,content-box
+
+background-clip:;-->padding-box,border-box,content-box,text
+
+background-blend-mode: ;
+
+background-gradient: ;
 
 ---
 
@@ -254,7 +260,11 @@ font-weight:;
 
 font-variant:;
 
----
+font-stretch:; -->(keywords) normal,condensed,expanded,ultra-condensed,ultra-expanded,(or)Numeric values 1,5,9
+
+font-synthesis:;--->none,weight,style,style weight
+
+## @font-face {}--->auto,block,swap,fallback,optional
 
 **7.Icons**
 
@@ -267,6 +277,13 @@ font-variant:;
 ```
 
 ---
+
+**7.list style**
+
+- List Style Type
+- List Style Image
+- List Style Position
+- List Style Color
 
 **8.Link**
 
@@ -320,7 +337,7 @@ background-color: hotpink;
 
 **8.display**
 
-display:;#inline,block,none,inline-block
+display:;#inline,block,none,inline-block,flex,grid
 
 visibility:;#hidden
 
@@ -492,12 +509,12 @@ _Pesudo-Elemet:_
 
 **_Absolute Lengths_**
 
-cm centimeters <br>  
-mm millimeters <br>
+cm centimeters (2.54 cm = 1 inch)<br>  
+mm millimeters (10mm = 1cm)<br>
 in inches (1in = 96px = 2.54cm) <br>
-px \* pixels (1px = 1/96th of 1in) <br>
-pt points (1pt = 1/72 of 1in) <br>
-pc picas (1pc = 12 pt) <br>
+px \* pixels (1px = 1/96th of an inch) <br>
+pt points (1pt = 1/72th of an inch) <br>
+pc picas ( 1pc = 1/6th of an inch) <br>
 
 **_Relative Lengths_**
 
@@ -1252,7 +1269,12 @@ outline-offset: 5px;
   background: #eee;
   }
 
-#Pseudo-Elements
+- :not(selector)
+- :checked
+- :target
+- :before and :after
+
+#Pseudo-Elements:
 
 - The ::first-line Pseudo-element
   p::first-line {
